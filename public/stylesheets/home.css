@@ -1,0 +1,76 @@
+
+
+@media (min-width: 800px) and (max-width: 850px) {
+    .navbar:not(.top-nav-collapse) {
+        background: #1C2331!important;
+    }
+}
+.view,body,html{height:100%}
+.navbar{background-color:rgba(0,0,0,.2)}
+.page-footer,.top-nav-collapse{background-color:#1C2331}
+@media only screen and (max-width:768px){.navbar{background-color:#1C2331}}
+
+nav .navbar-nav li a{
+font-family: Arial, Helvetica, sans-serif;
+font-size: large;
+/*color: white !important;*/
+color:  rgb(242, 242, 242);
+}
+nav .navbar-nav li a:hover{
+color: white !important;
+}
+
+.active_nav{ background-color: #1C2331}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }

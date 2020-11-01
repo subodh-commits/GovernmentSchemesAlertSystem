@@ -1,0 +1,95 @@
+@media (min-width: 800px) and (max-width: 850px) {
+  .navbar:not(.top-nav-collapse) {
+      background: #1C2331!important;
+  }
+}
+body{font-family:helvetica}
+.navbar{background-color:#1C2331}
+.page-footer,.top-nav-collapse{background-color:#1C2331}
+@media only screen and (max-width:768px){.navbar{background-color:#1C2331}}
+
+nav .navbar-nav li a{
+font-family: cursive;
+font-size: large;
+/*color: white !important;*/
+color:  rgb(242, 242, 242);
+}
+nav .navbar-nav li a:hover{
+color: white !important;
+}
+
+.active_nav{ background-color: #1C2331}
+body, html {
+height: 100%;
+margin: 0;
+}
+
+.bg {
+
+/* The image used */
+background-image: url("img1.jpg");
+
+/* Full height */
+height: 80%; 
+
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+#ct1{
+
+
+border: 1.5px solid #C0C0C0;
+margin-bottom: 20px;
+
+}
+
+#ct2{
+
+
+border: 1.5px solid #C0C0C0;
+}
+
+
+@media (min-width: 768px) {
+.py-md-6 {
+padding-top: 6rem !important;
+padding-bottom: 6rem !important;  
+}
+}
+
+#card{
+padding-top: 100px;
+padding-bottom: 120px
+}
+img {
+border-radius: 60px;
+border: 2px solid black;
+}
+h3{
+font-family: Montserrat;
+color:rgb(36, 36, 35); 
+}
+h5{
+font-family: Montserrat;
+color:rgb(36, 36, 35); 
+}
+#row1{
+border-bottom: 1px solid rgb(201, 198, 195);
+padding-bottom: 20px;
+}
+
+#row2{
+padding-left: 40px;
+padding-top: 30px;
+padding-right:40px;
+padding-bottom: 20px;
+border-bottom: 1px solid rgb(201, 198, 195);
+
+}
+#row3{
+padding-top: 20px;
+justify-content: center;
+}

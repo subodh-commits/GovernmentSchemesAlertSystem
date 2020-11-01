@@ -1,0 +1,44 @@
+@media (min-width: 800px) and (max-width: 850px) {
+    .navbar:not(.top-nav-collapse) {
+        background: #1C2331!important;
+    }
+  }
+  body{font-family:helvetica}
+  .navbar{background-color:#1C2331}
+  .page-footer,.top-nav-collapse{background-color:#1C2331}
+  @media only screen and (max-width:768px){.navbar{background-color:#1C2331}}
+  
+  nav .navbar-nav li a{
+  font-family: cursive;
+  font-size: large;
+  /*color: white !important;*/
+  color:  rgb(242, 242, 242);
+  }
+  nav .navbar-nav li a:hover{
+  color: white !important;
+  }
+  
+  .active_nav{ background-color: #1C2331}
+  body, html {
+  height: 100%;
+  margin: 0;
+  }
+  
+  
+  @media (min-width: 768px) {
+  .py-md-6 {
+  padding-top: 6rem !important;
+  padding-bottom: 6rem !important;  
+  }
+  }
+  
+  #main{
+      padding-top:60px;
+  }
+  
+  #cl1{
+      justify-content: center;
+      background-color: #dfdfe8;
+      padding-top: 40px;
+      padding-left: 40px;
+  }

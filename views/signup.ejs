@@ -1,0 +1,257 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="stylesheets/signup.css">
+    
+</head>
+
+<body>
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" id="navbar">
+    <div class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand" style="font-family:helvetica;font-weight:bolder;" >
+        GovtSchemes.in
+      </a>
+
+      <!-- Collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Left -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="/">Home
+              <!--<span class="sr-only">(current)</span>-->
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Education">Education</a>
+            <span class="sr-only">(current)</span>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Agriculture">Agriculture</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Health">Health</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Social_welfare">Social Welfare</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Energy">Energy</a>
+          </li>
+        </ul>
+
+        <!-- Right -->
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <a href="loginPage" class="btn btn-success btn-sm">
+              Login
+            </a>
+          </li>
+        </ul>
+
+      </div>
+ </nav>
+	<div class="container" id="container-sign">
+		
+                <form action="/api/register/signup" id="form-sign" onsubmit="return validation()" method="post">
+                	
+                    <fieldset>
+                        <legend class="text-center">Registration Form<span class="req"></span></legend>
+                         
+                        <div class="form-group row">
+                            <label for="firstname" class="col-sm-2 col-form-label">First Name</label>
+                            <div class="col-sm-10">
+                            <input class="form-control" type="text" name="firstname" id="fname" />
+                            <span id="fname_error" class="text-danger font-weight-bold"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="lastname" class="col-sm-2 col-form-label">Last Name</label>
+                            <div class="col-sm-10">
+                            <input class="form-control" type="text" name="lastname" id="lname"/>
+                            <span id="lname_error" class="text-danger font-weight-bold"></span>
+                        </div>
+                    </div>
+
+                        <div class="form-group row">
+                            <label for="phonenumber" class="col-sm-2 col-form-label">Phone Number</label>
+                            <div class="col-sm-10">
+                            <input class="form-control" type="text" name="phonenumber" id="pno" />
+                            <span id="phone_error" class="text-danger font-weight-bold"></span>
+                        </div>
+                    </div>
+                        <div class="form-group row">
+                            <label for="date" class="col-sm-2 col-form-label">Birth-Date</label>
+                            <div class="col-sm-10">
+                            <input class="form-control" required type="date" name="birthdate" id="bday"/>
+                            <span id="bday_error" class="text-danger font-weight-bold"></span>
+                        </div>
+                    </div>
+                        <div class="form-group row">
+                            <label for="age" class="col-sm-2 col-form-label">Age </label>
+                            <div class="col-sm-10">
+                            <input class="form-control" type="text" name="age" id="age" />
+                            <span id="age_error" class="text-danger font-weight-bold"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        	
+                        <label for="gender" class="col-sm-2 col-form-label">Gender</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" type="text" id="gender" name="gender">
+                             <option value="Select">Select</option>
+                              <option value="Male">Male</option>
+                              <option value="Female">Female</option>
+                              
+                             </select>
+                        <span id="gender_error" class="text-danger font-weight-bold"></span>
+                    </div>
+                                        
+            </div>
+
+
+                        <div class="form-group row">
+                            <label for="email" class="col-sm-2 col-form-label">Email Address</label>
+                            <div class="col-sm-10">
+                            <input class="form-control" type="text" name="email" id="email"/>
+                            <span id="email_error" class="text-danger font-weight-bold"></span>
+
+                        </div>
+                    </div>
+
+                        <div class="form-group row">
+                            <label for="address" class="col-sm-2 col-form-label">Address</label>
+                            <div class="col-sm-10">
+                            <input class="form-control"  type="text" name="address" id="address"/>
+                            <span id="address_error" class="text-danger font-weight-bold"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="education" class="col-sm-2 col-form-label">Education Details</label>
+                        <div class="col-sm-10">
+                        <select class="form-control" type="text"  name="education" id="education">
+                             <option value="Select">Select</option>
+                              <option value="Farmer">Higher Education</option>
+                              <option value="Student">Secondary Education</option>
+                              <option value="Student">Primary Education</option>
+                              
+                              
+                              
+                             </select>
+                       
+                        <span id="education_error" class="text-danger font-weight-bold"></span>
+                    </div>
+                </div>
+                    
+                <div class="form-group row">
+                    <label for="occupation" class="col-sm-2 col-form-label" >Occupation </label>
+                    <div class="col-sm-10">
+                    <select class="form-control" type="text" id="occupation" name="occupation">
+                         <option value="Select">Select</option>
+                          <option value="Farmer">Farmer</option>
+                          <option value="Student">Student</option>
+                          <option value="Unemployed">Unemployed</option>
+                          <option value="Social Worker">Social Worker</option>
+                          
+                          
+                         </select>
+                    <span id="occupation_error" class="text-danger font-weight-bold"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="caste" class="col-sm-2 col-form-label">Caste Details</label>
+                 <div class="col-sm-10">
+                 <select class="form-control" type="text" name="caste" id="caste">
+                     <option value="Select">Select</option>
+                      <option value="GENERAL">GENERAL</option>
+                      <option value="OBC">OBC</option>
+                      <option value="SC">SC</option>
+                      <option value="ST">ST</option>
+                      
+                      
+                     </select>	
+                
+                <span id="caste_error" class="text-danger font-weight-bold"></span>
+            </div>
+        </div>
+                        <div class="form-group row">
+                            <label for="annual" class="col-sm-2 col-form-label">Annual Income </label>
+                            <div class="col-sm-10">
+                            <input class="form-control" type="text" name="annual" id="annual" />
+                            <span id="annual_error" class="text-danger font-weight-bold"></span>
+                        </div>
+                    </div>
+
+                        <div class="form-group row">
+                            <label for="username" class="col-sm-2 col-form-label">User name</label>
+                             <div class="col-sm-10">
+                            <input class="form-control" type="text" name="username" id="username" />
+                            <span id="username_error" class="text-danger font-weight-bold"></span>
+                       </div>
+                   </div>
+           
+                        <div class="form-group row">
+                            <label for="password" class="col-sm-2 col-form-label" >Password</label>
+                            <div class="col-sm-10">
+                            <input class="form-control" type="password" name="password" id="password" />
+                            <span id="password_error" class="text-danger font-weight-bold"></span>
+                        </div>
+                    </div>
+
+                        <div class="form-group row">
+                            <label for="conf-password" class="col-sm-2 col-form-label" >Confirm-Password</label>
+                            <div class="col-sm-10">
+                            <input class="form-control" type="password" name="conf-password" id="confpass" />
+                            <span id="confpass_error" class="text-danger font-weight-bold"></span>
+                          </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <input type="checkbox" required name="terms" id="field_terms">   <label for="terms">I agree
+                                with the <a href="terms.php"
+                                    title="You may read our terms and conditions by clicking on this link">terms and
+                                    conditions</a> for Registration.</label><span class="req">* </span>
+                        </div>
+
+                        <div class="form-group">
+                            <input class="btn btn-success" type="submit" name="submit_reg" value="Register">
+                        </div>
+                        <h5>You will receive an email after completion of registration </h5>
+                        <h5>Be sure to check your spam folders. </h5>
+
+
+                    </fieldset>
+                
+                </form>
+
+     </div>    
+
+
+             
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>           
+ <script src="Javascripts/formValidation.js"></script>
+</body>
+
+</html>
+
+
+<!---->

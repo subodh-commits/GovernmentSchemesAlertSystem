@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+    <link rel="stylesheet" href="stylesheets/subodh.css">
+    <link href="stylesheets/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-md-6">
+                <form action="/api/education/add" method="post">
+                    <fieldset>
+                        <legend class="text-center">Scheme Registration Form</style><span class="req"></span></legend>
+
+                        <div class="form-group">
+                            <label for="schemeName">Scheme name: </label>
+                            <input class="form-control" type="text" name="schemeName" id="sname" />
+                            <span id="sname_error" class="text-danger font-weight-bold"></span>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="schemeInfo">SchemeInfo: </label>
+                            <input class="form-control" type="text" name="schemeInfo" id="sinfo"/>
+                            <span id="lname_error" class="text-danger font-weight-bold"></span>
+                        </div>
+
+                        
+                    <div class="form-group">
+                            <label for="age">Age Rquired </label>
+                            <input class="form-control" type="text" name="age" id="age" />
+                            <span id="age_error" class="text-danger font-weight-bold"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <input class="form-control" type="text" name="gender" id="gender" />
+                            <span id="gender_error" class="text-danger font-weight-bold"></span>
+                        </div>
+
+                        
+
+                        
+                        <div class="form-group">
+                            <label for="education">Education Details: </label>
+                            <input class="form-control" type="text" name="education" id="education"/>
+                            <span id="education_error" class="text-danger font-weight-bold"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="occupation">Occupation: </label>
+                            <input class="form-control" type="text" name="occupation" id="occupation"/>
+                            <span id="occupation_error" class="text-danger font-weight-bold"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="caste">Caste Details: </label>
+                            <input class="form-control" type="text" name="caste" id="caste" />
+                            <span id="caste_error" class="text-danger font-weight-bold"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="annual">Annual Income: </label>
+                            <input class="form-control" type="text" name="annual" id="annual" />
+                            <span id="annual_error" class="text-danger font-weight-bold"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="nationality">Nationality: </label>
+                            <input class="form-control" type="text" name="national" id="nation" />
+                            <span id="natonal_error" class="text-danger font-weight-bold"></span>
+                        </div>
+                       <div class="form-group">
+                            <input type="checkbox" required name="terms" id="field_terms">   <label for="terms">I agree
+                                with the <a href="terms.php"
+                                    title="You may read our terms and conditions by clicking on this link">terms and
+                                    conditions</a> for Registration.</label><span class="req">* </span>
+                        </div>
+
+                        <div class="form-group">
+                            <input class="btn btn-success" type="submit" name="submit_reg" value="Register">
+                        </div>
+                        <h5>You will receive an email to complete the registration and validation process. </h5>
+                        <h5>Be sure to check your spam folders. </h5>
+
+
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+ 
+</body>
+
+</html>
+

@@ -1,0 +1,131 @@
+<html>
+    <head>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="stylesheets/admin.css" />
+        <!--script-->
+        
+        <title>Admin</title>
+      </head>
+      
+      <body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" id="navbar">
+      <div class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand" style="font-family:Arial, Helvetica, sans-serif;font-weight:bolder;" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">
+        GovtSchemes.in
+      </a>
+
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link">
+              Admin Panel
+            </a>
+          </li>
+      </ul> 
+      
+      <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <a href="/" class="btn btn-success btn-sm">
+              Logout
+            </a>
+          </li>
+      <ul>       
+
+      
+
+      </div>
+ </nav>
+    <div class="container" id="card">
+    <div class="row">
+    <div class="col col-sm-6 col md-4 col-lg-3" id="col1">
+    <form>
+        <h5>ADD SCHEMES</h5>
+        <br>
+        <input class="btn btn-success" type="button" name="educationSchemes" value="education Schemes" onclick="location.href='Educationadd_schemes';"><br><br>
+        <input class="btn btn-success" type="button" name="AgricultureSchemes" value="Agriculture Schemes" onclick="location.href='Agricultureadd_schemes';"><br><br>
+        <input class="btn btn-success" type="button" name="HealthSchemes" value="Health Schemes" onclick="location.href='Healthadd_schemes';"><br><br>
+        <input class="btn btn-success" type="button" name="SocialwelfareSchemes" value="Socialwelfare Schemes" onclick="location.href='socialwelfareadd_schemes';"><br><br>
+        <input class="btn btn-success" type="button" name="EnergySchemes" value="Energy Schemes" onclick="location.href='Energyadd_schemes';"><br><br>
+    </form>    
+   
+    </div>
+    <div class="col col-sm-6 col md-4 col-lg-3" id="col2">
+     
+      <form>
+         <h5>VIEW SCHEMES</h5>
+         <br>
+         <input class="btn btn-success" type="button" name="EducationSchemes" value="Education Schemes" onclick="location.href='/api/education/eduschemes';"><br><br>
+        <input class="btn btn-success" type="button" name="AgricultureSchemes" value="Agriculture Schemes" onclick="location.href='/api/agriculture/agrischemes';"><br><br>
+        <input class="btn btn-success" type="button" name="HealthSchemes" value="Health Schemes" onclick="location.href='/api/health/healthschemes';"><br><br>
+        <input class="btn btn-success" type="button" name="SocialwelfareSchemes" value="Socialwelfare Schemes" onclick="location.href='/api/socialwelfare/socialschemes';"><br><br>
+        <input class="btn btn-success" type="button" name="EnergySchemes" value="Energy Schemes" onclick="location.href='/api/energy/energyschemes';"><br><br>
+    </form>    
+    
+    </div>
+    <div class="col col-sm-6 col md-4 col-lg-3" id="col3">
+      
+      <form>
+        <h5>DELETE SCHEMES</h5>
+        <br>
+        <input class="btn btn-success" type="button" name="educationSchemes" value="education Schemes"onclick="myFunction();"><br><br>
+        <input class="btn btn-success" type="button" name="AgricultureSchemes" value="Agriculture Schemes" onclick="myFunction1();"><br><br>
+        <input class="btn btn-success" type="button" name="HealthSchemes" value="Health Schemes" onclick="myFunction2();"><br><br>
+        <input class="btn btn-success" type="button" name="SocialwelfareSchemes" value="Socialwelfare Schemes" onclick="myFunction3();"><br><br>
+        <input class="btn btn-success" type="button" name="EnergySchemes" value="Energy Schemes" onclick="myFunction4();"><br><br>
+        
+    </form>    
+</div>
+    <div class="col col-sm-6 col md-4 col-lg-3" id="col4">
+       
+       <form>
+        <h5>SCHEME ELIGIBILITY DETAILS</h5>
+        <br>
+        <input class="btn btn-success" type="button" name="educationSchemes" value="education Schemes" onclick="location.href='/api/education/users';"><br><br>
+        <input class="btn btn-success" type="button" name="AgricultureSchemes" value="Agriculture Schemes" onclick="location.href='/api/agriculture/users';"><br><br>
+        <input class="btn btn-success" type="button" name="HealthSchemes" value="Health Schemes" onclick="location.href='/api/health/users';"><br><br>
+        <input class="btn btn-success" type="button" name="SocialwelfareSchemes" value="Socialwelfare Schemes" onclick="location.href='/api/socialwelfare/users';"><br><br>
+        <input class="btn btn-success" type="button" name="EnergySchemes" value="Energy Schemes" onclick="location.href='/api/energy/users';"><br><br>
+    </form>    
+    
+    </div>
+    
+  </div>
+  <div class="row pt-3">
+    <form action="/api/register/sms" method="POST">
+      <h5>SENT SMS</h5>
+  <label for="phone" class="sr-only">User caller ID</label>
+  <input type="text" name="phonenumber" id="inputphone" required autofocus>
+  <label for="SMS" class="sr-only">SMS Body</label>
+  <input type="text" name="SMS" id="inputsms" required>
+  <input class="btn btn-success" type="submit" name="SMS_sent" value="Sent SMS" ><br><br>
+    </form>
+  </div>
+  
+</div>
+
+<footer class="page-footer font-small">
+
+  <!-- Copyright -->
+      <div class="footer-copyright text-center py-3" style="color: white">© 2020 Copyright:
+       <a href="https://mdbootstrap.com/"> GovtSchemes.in</a>
+      </div>
+  <!-- Copyright -->
+
+       </footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> 
+<script src="Javascripts/admin.js"></script>  
+ 
+</body>
+
+</html>
+

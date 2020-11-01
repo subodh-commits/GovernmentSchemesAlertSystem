@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Login</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/login.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" id="navbar">
+    <div class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand" style="font-family: cursive;font-weight:bolder;">
+        GovtSchemes.in
+      </a>
+
+      <!-- Collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Left -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="Education">Education</a>
+            <span class="sr-only">(current)</span>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Agriculture">Agriculture</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Health">Health</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Social_welfare">Social Welfare</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Energy">Energy</a>
+          </li>
+        </ul>
+        </ul>
+
+        <!-- Right -->
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item active">
+            <a class="nav-link" target="_blank">
+              <i class="fa fa-user-circle" aria-hidden="true" id="user"><%=user%></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="logout" class="btn btn-success btn-sm">
+              Logout
+            </a>
+          </li>
+        </ul>
+
+      </div>
+ </nav>
+
+  <div class="container-fluid" id="main">
+    <div class="row">
+      <div class="col col-sm-4 col-md-3 col-lg-2" id="cl1">
+        <h5>Department</h5>
+        <form style="font-size: large;font-family: cursive;" id="form_checkbox">
+          <input type="checkbox" name="checkbox1" id="education">
+          <label for="checkbox1"> Education </label><br>
+          <input type="checkbox" name="checkbox2" id="health">
+          <label for="checkbox2"> Health</label><br>
+          <input type="checkbox" name="checkbox3" id="agriculture">
+          <label for="checkbox3">Agriculture</label><br>
+          <input type="checkbox" name="checkbox4" id="socialwelfare">
+          <label for="checkbox4">Social Welfare</label><br>
+          <input type="checkbox" name="checkbox5" id="energy" >
+          <label for="checkbox5">Energy</label><br>
+        </form>
+      </div>
+      <div class="col col-sm-8 col-md-9 col-lg-10">
+        <div class="container pt-4">
+           <div class="row">
+             
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="container">
+                <div class="card" id="card_education" style="width: 18rem; visibility: hidden;">
+                  <img src="https://img.freepik.com/free-vector/modern-education-concept-with-flat-design_23-2147919753.jpg?size=338&ext=jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"></p>
+                    
+                  </div>
+                </div>
+                  </div>
+                </div>
+              
+              
+            
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="container">
+                <div class="card" style="width: 18rem;visibility: hidden; " id="card_education">
+                  <img src="https://img.freepik.com/free-vector/modern-education-concept-with-flat-design_23-2147919753.jpg?size=338&ext=jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"></p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="container">
+                <div class="card" style="width: 18rem;visibility: hidden;"id="card_education">
+                  <img src="https://img.freepik.com/free-vector/modern-education-concept-with-flat-design_23-2147919753.jpg?size=338&ext=jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"></p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Force next columns to break to new line at md breakpoint and up -->
+            <div class="w-100 d-none d-md-block"><br></div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="container">
+                <div class="card" style="width: 18rem;visibility: hidden;"id="card_education" onclick="">
+                  <img src="https://img.freepik.com/free-vector/modern-education-concept-with-flat-design_23-2147919753.jpg?size=338&ext=jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"></p>
+                    
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="container">
+                <div class="card" style="width: 18rem; visibility: hidden;"id="card_education">
+                  <img src="https://img.freepik.com/free-vector/modern-education-concept-with-flat-design_23-2147919753.jpg?size=338&ext=jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"></p>
+                    
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="container">
+                <div class="card" style="width: 18rem;visibility: hidden;"id="card_education">
+                  <img src="https://img.freepik.com/free-vector/modern-education-concept-with-flat-design_23-2147919753.jpg?size=338&ext=jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"></p>
+                    
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+    window.onload = function () {
+        var formcheck = document.getElementById("form_checkbox");
+        var chks = formcheck.getElementsByTagName("INPUT");
+        for (var i = 0; i < chks.length; i++) {
+              chks[i].onclick = function () {
+                for (var i = 0; i < chks.length; i++) {
+                    if (chks[i] != this && this.checked) {
+                        chks[i].checked = false;
+                    }
+                    else{
+                      switch(i){
+                        case 0:
+                        education();
+                        break;
+                        case 1:
+                        health();
+                        break;
+                        case 2:
+                        agriculture();
+                        break;
+                        case 3:
+                        socialwelfare();
+                        break;
+                        case 4:
+                        energy();
+                        break;
+                        
+                      }
+                    }
+                }
+            };
+        }
+    };
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="Javascripts/education_display.js"></script>
+  <script src="Javascripts/health_display.js"></script>
+  <script src="Javascripts/agriculture_display.js"></script>
+  <script src="Javascripts/energy_display.js"></script>
+  <script src="Javascripts/socialwelfare_display.js"></script>
+</body>
+
+</html>

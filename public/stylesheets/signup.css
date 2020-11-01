@@ -1,0 +1,96 @@
+body {
+    padding-top:20px;
+   background-color: #74EBD5;
+   background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+  
+}
+
+
+@media (min-width: 800px) and (max-width: 850px) {
+    .navbar:not(.top-nav-collapse) {
+        background: #1C2331!important;
+    }
+}
+
+.navbar{background-color:#1C2331;}
+.page-footer,.top-nav-collapse{background-color:#1C2331}
+@media only screen and (max-width:768px){.navbar{background-color:#1C2331}}
+
+nav .navbar-nav li a{
+font-family: Arial, Helvetica, sans-serif;
+font-size: large;
+/*color: white !important;*/
+color:  rgb(242, 242, 242);
+}
+nav .navbar-nav li a:hover{
+color: white !important;
+}
+
+.active_nav{ background-color: #1C2331}
+   
+fieldset {
+    
+    padding: 20px;
+}
+
+label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: bold;
+  
+}
+
+legend{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    fieldset {
+      padding-left: 150px;
+    padding-right: 150px;
+    }
+
+    
+    
+}
+
+
+
+
+.form-control {
+    width: 100%;
+}
+label small {
+    color: #678 !important;
+}
+
+
+#form-sign{
+    
+    padding-top: 30px;
+    background-color: white;
+    border-style: groove;
+    border-radius: 12px;
+}
+
+
+#container-sign{
+    padding-top: 80px;
+
+}
+
+@media (min-width: 992px) {
+    #container-sign{
+    padding-top: 100px;
+    padding-right: 80px;
+    padding-left: 80px;
+    }
+
+    
+    
+}
+
+
+

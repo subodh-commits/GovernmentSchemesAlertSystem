@@ -1,0 +1,30 @@
+{
+  "name": "govt_schemes_alert_system",
+  "version": "1.0.0",
+  "description": "Btech Project",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Subodh",
+  "license": "ISC",
+  "engines": {
+    "node": "v12.16.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "chalk": "^3.0.0",
+    "ejs": "^2.7.2",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "https": "^1.0.0",
+    "mongodb": "^3.3.4",
+    "mongoose": "^5.7.11",
+    "mongoose-validators": "^0.1.0",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^5.0.1",
+    "request": "^2.88.2",
+    "twilio": "^3.46.0"
+  }
+}
